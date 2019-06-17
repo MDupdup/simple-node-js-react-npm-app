@@ -6,7 +6,7 @@ RUN npm install -g serve
   
 WORKDIR /app
 
-COPY ../front /app
+COPY ./test/front /app
 
 RUN npm install
 RUN npm run build
