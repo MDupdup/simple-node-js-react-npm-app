@@ -13,3 +13,23 @@ you'll be creating yourself during the tutorial and the `scripts` subdirectory
 contains shell scripts with commands that are executed when Jenkins processes
 the "Test" and "Deliver" stages of your Pipeline.
 dqsdqsdqsd
+
+
+## KOMEKON Fé
+
+### Webhook sur github
+ * https://github.com/KirianCaumes/simple-node-js-react-npm-app/settings/hooks
+ * Add webhook
+```sh
+ngrok.exe http 8082
+```
+
+### Jenkins
+ * New Item > Multibranch Pipeline
+ * Branch Sources / Github => Creditentials (mettre sur user github), Owner "KirianCaumes", Repo "simple-node..." => Behaviors : Discover branches : "Exlude ..." & Filter by name, include "master"
+ 
+### Test
+
+```sh
+git add . | git commit -m "test" | git push
+```
