@@ -4,4 +4,4 @@ qsd
 wxcwxcw
 qsdqsd
 git add . | git commit -m "test" | git push
-wxcwxcwx sd
+wxcwxcwx sd qsd
