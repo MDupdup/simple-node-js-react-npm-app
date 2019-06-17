@@ -1,4 +1,7 @@
 pipeline {
+    triggers {
+        pollSCM ''
+    }
     agent {
         docker {
             image 'node:6-alpine'
