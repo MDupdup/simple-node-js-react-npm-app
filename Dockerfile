@@ -11,5 +11,6 @@ COPY ../front /app
 RUN npm install
 RUN npm run build
 
+
 EXPOSE 8085
 CMD ["serve", "-p", "8085"]
